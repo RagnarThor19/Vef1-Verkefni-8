@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="styles.css" />
   <title>Verkefni 8: Vefverslunarkarfa</title>
-  <script src="main.js" type="module"></script>
+  <script src="main.js" type="module" async></script>
   
 </head>
 
@@ -92,7 +92,7 @@
 
       </div>
 
-      <form method="post">
+      <form method="post" class="order-submit">
         <div class="form-field">
           <label for="name">Nafn:</label>
           <input type="text" name="name" id="name">
@@ -101,11 +101,11 @@
           <label for="address">Heimilisfang:</label>
           <input type="text" name="address" id="address">
         </div>
-        <button>Ganga frá kaupum</button>
+        <button class="submit">Ganga frá kaupum</button>
       </form>
 
     </section>
-    <section class="receipt">
+    <section class="receipt hidden">
       <h2>Kvittun</h2>
       <p>Takk fyrir að versla hjá okkur!</p>
       <p><a href=".">Kaupa meira</a>.</p>
